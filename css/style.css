@@ -9,8 +9,48 @@ body {
 	font-family: 'Dosis', sans-serif;
 }
 
-#title {
-	
+/************************
+TEXT BOX AND BUTTON
+************************/
+
+#userGuess, #newGame {
+	height: 36px;
+	width: 58px;
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+
+#newGame {
+	font-size: 14px;
+	width: 88px;
+}
+
+button {
+	margin: 8px;
+	display: inline-block;
+	height: 44px;
+	width: 86px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #888;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #000;
+}
+
+/************************
+FEEDBACK
+************************/
+
+.feedback {
+	border: 1px solid black;
+}
+
+span {
+	font-size: 32px;
 }
 
 /************************
@@ -28,7 +68,16 @@ h1, h3 {
 
 }
 
-form {
+p {
 	color: #4aa7b3;
 	text-shadow: 1px 1px 1px #222;
+}
+
+button {
+	background-color: #4aa7b3;
+	color: #222;
+}
+
+button:hover {
+	background-color: #368B96;
 }

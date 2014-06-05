@@ -14,12 +14,14 @@
 
 
 <input type="text" id="userGuess">
-<button type ="button">Guess!</button>
-<p># guesses remaining</p>
-<p>Hot/Cold</p>
+<button type ="button" class="guess">Guess!</button>
+<div class="feedback">
+	<p><span></span>guesses remaining</p>
+	<p id="temperature"></p>
+	<p id="highLow"></p>
+</div>
 
-
-<input type="submit" value="New Game" id="newGame">
+<button type="button" value="New Game" id="newGame">New Game</button>
 
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
