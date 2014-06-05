@@ -1,0 +1,34 @@
+/************************
+HEADER
+************************/
+
+body {
+	text-align: center;
+	margin: 1%;
+	padding: 10%;
+	font-family: 'Dosis', sans-serif;
+}
+
+#title {
+	
+}
+
+/************************
+COLORS
+************************/
+
+body {
+	background-color: #4b6c56;
+	color: #c0bea7;
+	text-shadow: 2px 2px 2px #444;
+}
+
+h1, h3 {
+	color: #c0bea7;
+
+}
+
+form {
+	color: #4aa7b3;
+	text-shadow: 1px 1px 1px #222;
+}
