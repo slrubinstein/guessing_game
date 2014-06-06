@@ -13,7 +13,7 @@ body {
 TEXT BOX AND BUTTON
 ************************/
 
-#userGuess, #newGame {
+#userGuess, #newGameButton {
 	height: 36px;
 	width: 58px;
 	font-size: 18px;
@@ -21,7 +21,7 @@ TEXT BOX AND BUTTON
 	text-align: center;
 }
 
-#newGame {
+#newGameButton {
 	font-size: 14px;
 	width: 88px;
 }
@@ -47,6 +47,7 @@ FEEDBACK
 
 .feedback {
 	border: 2px solid black;
+	font-size: 20px;
 }
 
 span {
