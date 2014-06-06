@@ -9,22 +9,43 @@
 
 <body>
 
-<h1>Guessing Game</h1>
-<h3>Try and guess my number!<br>Enter a number between 1 and 100 in the box.</h3>
+	<h1>Guessing Game</h1>
+	<h2>I am thinking of a number between 1 and 100.<br>Try and guess it in the box below!</h2>
 
 
-<input type="text" id="userGuess">
-<button type ="button" class="guess">Guess!</button>
-<div class="feedback">
-	<p><span></span>guesses remaining</p>
-	<p id="temperature"></p>
-	<p id="highLow"></p>
-</div>
+	<input type="text" id="userGuess">
+	<button type ="button" class="guess">Guess!</button>
+	<div class="feedback">
+		<p><span></span>guesses remaining</p>
+		<p id="temperature"></p>
+		<p id="highLow"></p>
+	
 
-<button type="button" value="New Game" id="newGame">New Game</button>
+		<button type="button" value="New Game" id="newGame">New Game</button>
 
+		<table border="1" >
+			<thead>
+				<tr>
+					<td>1st Guess</td>
+					<td>2nd Guess</td>
+					<td>3rd Guess</td>
+					<td>4th Guess</td>
+					<td>5th Guess</td>
+				</tr>
+			</thead>	
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 </body>

@@ -46,11 +46,22 @@ FEEDBACK
 ************************/
 
 .feedback {
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 span {
 	font-size: 32px;
+}
+
+table {
+	width: 100%;
+}
+
+td, tbody {
+	padding: 15px;
+	height: 30px;
+	font-size: 20px;
+	empty-cells: show;
 }
 
 /************************

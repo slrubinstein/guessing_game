@@ -1,3 +1,14 @@
+// TO DOs
+//create event for hitting "return"
+// check for repeat guesses
+// say "hotter" or "colder" based on previous guesses
+// make New Game button work
+// Hint/cheat button
+// Add row to table to store hot/cold values
+// win screen
+// adjust div color based on hot or cold
+
+
 // Pick a random number between 1 and 100 and assign to variable "answer"
 
 
@@ -30,10 +41,12 @@ $("button").click(function() {
 	//if guess is legal, assign it to a variable and push to array
 	var guess = $guess.val();
 	guesses.push(guess)
+	$("tbody").append("<td>" + guess + "</td>");
 
 	// Check guess against answer
 	//if guess == answer, you win
 	if(guess == $answer) {
+		$("button").prop("disabled", true);
 		return alert("You win!") // possibly create winEvent function
 	}
 
@@ -47,6 +60,8 @@ $("button").click(function() {
 		$("#temperature").text('');
 		$("span").prepend("<p>Sorry, you lose.<br>The number was " + $answer + "!</p>");
 		$("button").prop("disabled", true);
+		$("#temperature").hide();
+		$("#highLow").hide();
 	}	
 
 	//else give feedback based on guess
@@ -75,10 +90,6 @@ $("button").click(function() {
 
 
 //hold list of past guesses
-
-
-
-
 
 
 $("button").submit(function(event) {
