@@ -75,7 +75,8 @@ function guessEvent() {
 		// Check guess against answer
 		//if guess == answer, you win
 		if(guess == $answer) {
-			$("button").prop("disabled", true);
+			$("#guessButton").prop("disabled", true);
+			$("#cheatButton").prop("disabled", true);
 			return alert("You win!") // possibly create winEvent function
 		}
 
@@ -100,13 +101,17 @@ function guessEvent() {
 // When guess button is clicked or when enter pressed, run guessEvent
 $("#guessButton").click(guessEvent);
 $("#userGuess").keypress(function(e) {
-	if(e.which == 13)
+	if((e.which == 13) && $("tbody td").length < 5)
 		$("#guessButton").click();
 });
 
 
 $("#newGameButton").click(function() {
 	location.reload();
+});
+
+$("#cheatButton").click(function(){
+	$("div").append("<p>The answer is " + $answer + "!</p>");
 });
 
 
